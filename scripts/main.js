@@ -4,13 +4,17 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 // PhoneGap is ready
 function onDeviceReady() {
-    
-	
 }
 
 var airlinesApp = function(){}
 
 airlinesApp.prototype = function() {
+	//console.log("hello");
+///////////////////////////////////////////////////////////
+	$("admloginbtn").click(function(){
+		 // alert("The paragraph was clicked.");
+		});
+///////////////////////////////////////////////////////////
     var _flightForCheckin = null,
     _flightForDetails=null,
     _ffNum = null, 
@@ -69,10 +73,11 @@ airlinesApp.prototype = function() {
     },
     
     _initHome = function(){
+    	console.log($('#userName').val());
         if (!_login) {
 	    	$.mobile.changePage("#logon", { transition: "flip" });
 	    	$('#login').submit(function () {
-               // alert("hello");
+               //console.log($('#userName').val());
 	    		$(this).hide();
 	    		_login = true;
 	    		airData.logOn($('#userName').val(), $('#pwd').val(),_handleLogOn);
