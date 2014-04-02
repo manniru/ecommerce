@@ -72,6 +72,7 @@ airlinesApp.prototype = function() {
         if (!_login) {
 	    	$.mobile.changePage("#logon", { transition: "flip" });
 	    	$('#login').submit(function () {
+               // alert("hello");
 	    		$(this).hide();
 	    		_login = true;
 	    		airData.logOn($('#userName').val(), $('#pwd').val(),_handleLogOn);
