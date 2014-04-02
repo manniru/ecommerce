@@ -78,10 +78,9 @@ Dashboard <span id="numberOfFlights"></span></a></li></ul>
 <ul data-role="listview" id="adsearch" data-inset="true" data-theme="d"><li><a href="#adsearch" data-transition="slide">Advanced Search</a></li></ul>                
 <ul data-role="listview" id="recordfind" data-inset="true" data-theme="d"><li><a href="#recordfind" data-transition="slide">Record a Find</a></li></ul>                
 <ul data-role="listview" id="about" data-inset="true" data-theme="d"><li><a href="#about" data-transition="slide">About Screen</a></li></ul>                
- <ul data-role="listview" id="logout" data-inset="true" data-theme="d"><li><a href="#logout" data-transition="slide">Log out</a></li></ul>                
-                
+<ul data-role="listview" id="logout" data-inset="true" data-theme="d"><li><a href="#logout" data-transition="slide">Log out</a></li></ul>                               
 </div>
-		</div>
+</div>
 
 		<!-- seatPicker page -->
 		<div id="seatPicker" data-role="page">
@@ -94,18 +93,7 @@ Dashboard <span id="numberOfFlights"></span></a></li></ul>
 			</div>
 		</div>
 
-		<!-- logon page -->
-<div id="logon" data-role="page">
-<div data-role="header" data-position="fixed"  data-tap-toggle="false">
-<h1>Login</h1></div>
-<div data-role="content">
-<form id="login">
-Username:<input type="text" id="userName" value="user@mail.com" />
-Password:<input type="password" id="pwd" value="P2ssw0rd" />
-<input type="submit" value="Login" />
-</form>
-			</div>
-		</div>
+
 
 		<!-- tripDetail page -->
 		<div id="tripDetail" data-role="page" data-add-back-btn="true">
@@ -550,13 +538,35 @@ eCommerce System is the System developed to work on Mobile Web Application, usin
 
 
 
+<!-- logon page -->
+<div id="logon" data-role="page">
+<div data-role="header" data-position="fixed"  data-tap-toggle="false">
+<h1>eCommerce System Login</h1></div>
+<div data-role="content">
+<form id="login">
+Username:<input type="text" id="userName" value="user@mail.com" />
+Password:<input type="password" id="pwd" value="13131" />
+<input type="submit" value="User Login" /></form>
+<ul data-role="listview" id="newreg" data-inset="true" data-theme="d"><li><a href="#newreg" data-transition="slide"><center>New Registration</center></a></li></ul>                               
+<ul data-role="listview" id="adminlogin" data-inset="true" data-theme="d"><li><a href="#logout" data-transition="slide"><center>Admin Login</center></a></li></ul>                               
+</div>
+</div>
 
-
-
+<!-- register page -->
+<div id="newreg" data-role="page">
+<div data-role="header" data-position="fixed"  data-tap-toggle="false">
+<h1>User Registration</h1></div><div data-role="content"><form id="login">
+Username:<input type="text" id="userName" value="admin@localhost.com" />
+Password: <input type="password" id="pwd" value="13131" />
+Fullname:<input type="text" id="fullname" value="Maxwell John" />
+Mobile No:<input type="text" id="mobileno" value="6022511426625" />
+Email:<input type="text" id="email" value="user@localhost.com" />
+<input type="submit" value="Register" />
+</form></div></div>
 
         
 	
-    </body>
+</body>
 </html>
             
 <script>
