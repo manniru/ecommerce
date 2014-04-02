@@ -50,17 +50,17 @@
                 <div class="info-wrapper-right">
 					<div class="info">
                         <div class="info-data" id="ffnum"></div>
-						<div class="info-label" for="ffnum">Ice Miles:</div>
+						<div class="info-label" for="ffnum">Customer No:</div>
                         <div class="clear"></div>
 					</div>
 					<div class="info">
                         <div class="info-data" id="miles"></div>
-						<div class="info-label" for="miles">Total Miles:</div>
+						<div class="info-label" for="miles">Customer Name:</div>
                         <div class="clear"></div>
 					</div>
 					<div class="info">
                         <div class="info-data" id="currentStatus">&nbsp;</div>
-						<div class="info-label" for="currentStatus">Priority:</div>
+						<div class="info-label" for="currentStatus">Amount Due:</div>
                         <div class="clear"></div>
 					</div>
 				</div>
@@ -68,33 +68,12 @@
             </div>
            
 			<div data-role="content"> 
-				<ul data-role="listview" id="myTripsView" data-inset="true" data-theme="d">
-					<li>
-						<a href="#myTrips" data-transition="slide">
-							My Account <span id="numberOfFlights"></span>
-						</a>
-					</li>
-				</ul>
-				<ul data-role="listview" id="flightStatusView" data-inset="true" data-theme="d">
-					<li>
-						<a href="#flightStatus" data-transition="slide">Account Status</a>
-					</li>
-				</ul>
-				<ul data-role="listview" id="bagTrackView" data-inset="true" data-theme="d">
-					<li>
-						<a href="#bagTrack" data-transition="slide">Track your cart</a>
-					</li>
-				</ul>
-				<ul data-role="listview" id="programProgressView" data-inset="true" data-theme="d">
-					<li>
-						<a href="#programProgress" data-transition="slide">Mileage program progress</a>
-					</li>
-				</ul>
-                <ul data-role="listview" id="settingsView" data-inset="true" data-theme="d">
-					<li>
-						<a href="#settings" data-transition="slide">Settings</a>
-					</li>
-				</ul>
+
+<ul data-role="listview" id="settingsView" data-inset="true" data-theme="d"><li><a href="#account" data-transition="slide">My Account</a></li></ul>
+<ul data-role="listview" id="settingsView" data-inset="true" data-theme="d"><li><a href="#settings" data-transition="slide">My Orders</a></li></ul>
+<ul data-role="listview" id="settingsView" data-inset="true" data-theme="d"><li><a href="#category" data-transition="slide">My Cart</a></li></ul>
+<ul data-role="listview" id="settingsView" data-inset="true" data-theme="d"><li><a href="#settings" data-transition="slide">Product Category</a></li></ul>
+<ul data-role="listview" id="settingsView" data-inset="true" data-theme="d"><li><a href="#settings" data-transition="slide">Logout</a></li></ul>
 			</div>
 		</div>
 
@@ -149,7 +128,7 @@ Password:<input type="password" id="pwd" value="13131" />
 		<!-- tripDetail page -->
 		<div id="tripDetail" data-role="page" data-add-back-btn="true">
 			<div data-role="header" data-position="fixed"  data-tap-toggle="false">
-				<h1>Trip Details</h1>
+				<h1>Account Details</h1>
                 <a data-role="button" href="#home" class="ui-btn-right">Home</a>
 			</div>
 			<div data-role="content">
@@ -188,7 +167,7 @@ Password:<input type="password" id="pwd" value="13131" />
 					</li>
 					<li>
 						<div class="ui-grid-a">
-							<div class="ui-block-a">Flight Number</div>
+							<div class="ui-block-a">Order Number</div>
 							<div class="ui-block-b">
 								<span id="tripDetail-return-flightNum"></span>
 							</div>
@@ -196,7 +175,7 @@ Password:<input type="password" id="pwd" value="13131" />
 					</li>
 					<li>
 						<div class="ui-grid-a">
-							<div class="ui-block-a">Departure Time</div>
+							<div class="ui-block-a">Order Date</div>
 							<div class="ui-block-b">
 								<span id="tripDetail-return-depart"></span>
 							</div>
@@ -204,7 +183,7 @@ Password:<input type="password" id="pwd" value="13131" />
 					</li>
 					<li>
 						<div class="ui-grid-a">
-							<div class="ui-block-a">Seat</div>
+							<div class="ui-block-a">Items</div>
 							<div class="ui-block-b">
 								<span id="tripDetail-return-seat"></span>
 							</div>
@@ -354,18 +333,45 @@ Password:<input type="password" id="pwd" value="13131" />
 				</ul>
 			</div>
 		</div>
-        
-        <!--Settings page-->
-		<div id="settings" data-role="page" data-add-back-btn="true">
-			<div data-role="header" data-position="fixed"  data-tap-toggle="false">
-				<h1>Settings</h1>
-			</div>
-			<div data-role="content">
-				<ul data-role="listview" id="Ul4" data-inset="true" data-theme="d">
-					<li>Come on, this is just a sample!</li>
-				</ul>
-			</div>
-		</div>
+
+<!--My Account page-->
+<div id="account" data-role="page" data-add-back-btn="true">
+<div data-role="header" data-position="fixed"  data-tap-toggle="false"><h1>My Account</h1></div>
+<div data-role="content">
+<ul data-role="listview" id="Ul4" data-inset="true" data-theme="d"><li>Edit My Account</li></ul>
+<ul data-role="listview" id="Ul4" data-inset="true" data-theme="d"><li>View My Account</li></ul>
+<ul data-role="listview" id="Ul4" data-inset="true" data-theme="d"><li>View My Status</li></ul>
+</div></div>
+
+<!--Settings page-->
+<div id="settings" data-role="page" data-add-back-btn="true">
+<div data-role="header" data-position="fixed"  data-tap-toggle="false"><h1>Mobile Phones</h1></div>
+<div data-role="content">
+<ul data-role="listview" id="Ul4" data-inset="true" data-theme="d"><li>Samsung Note 2</li></ul>
+<ul data-role="listview" id="Ul4" data-inset="true" data-theme="d"><li>Samsung S2</li></ul>
+<ul data-role="listview" id="Ul4" data-inset="true" data-theme="d"><li>Samsung S3</li></ul>
+<ul data-role="listview" id="Ul4" data-inset="true" data-theme="d"><li>Samsung S4</li></ul>
+<ul data-role="listview" id="Ul4" data-inset="true" data-theme="d"><li>Samsung S5</li></ul>
+</div></div>
+
+<!--Category page-->
+<div id="category" data-role="page" data-add-back-btn="true">
+<div data-role="header" data-position="fixed"  data-tap-toggle="false"><h1>Product Category</h1></div>
+<div data-role="content">
+<ul data-role="listview" id="Ul4" data-inset="true" data-theme="d"><li>Mobile</li></ul>
+<ul data-role="listview" id="Ul4" data-inset="true" data-theme="d"><li>Laptop</li></ul>
+<ul data-role="listview" id="Ul4" data-inset="true" data-theme="d"><li>Desktop</li></ul>
+</div></div>
+
+<!--Category page-->
+<div id="product" data-role="page" data-add-back-btn="true">
+<div data-role="header" data-position="fixed"  data-tap-toggle="false"><h1>Product Category</h1></div>
+<div data-role="content">
+<ul data-role="listview" id="Ul4" data-inset="true" data-theme="d"><li>Mobile</li></ul>
+<ul data-role="listview" id="Ul4" data-inset="true" data-theme="d"><li>Laptop</li></ul>
+<ul data-role="listview" id="Ul4" data-inset="true" data-theme="d"><li>Desktop</li></ul>
+</div></div>
+
 	
     </body>
 </html>
