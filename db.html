@@ -1,47 +1,45 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Storage Example</title>
+<html><script type="text/javascript" src="scripts/jquery.min.js"></script><head></head>
+<body>
 
-    <script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>
-    <script type="text/javascript" charset="utf-8">
 
-    // Wait for Cordova to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
 
-    // Cordova is ready
-    //
-    function onDeviceReady() {
-        var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
-        db.transaction(populateDB, errorCB, successCB);
-    }
 
-    // Populate the database 
-    //
-    function populateDB(tx) {
-         tx.executeSql('DROP TABLE IF EXISTS DEMO');
-         tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
-         tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "First row")');
-         tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Second row")');
-    }
+<script type="text/javascript">
+//var id = 1;
+var username = "user1";
+var password ="123";
+var role = "admin";
+var frstname = "User";
+var lastname = "One";
+var mobile = "6022626625";
+var address = "Bukit Jalil";
+var email = "user@yahoo.com";
 
-    // Transaction error callback
-    //
-    function errorCB(err) {
-        alert("Error processing SQL: "+err);
-    }
+var userid = "13";
+var text = "Welldone";
+var status ="pending";
 
-    // Transaction success callback
-    //
-    function successCB() {
-        alert("success!");
-    }
 
-    </script>
-  </head>
-  <body>
-    <h1>Example</h1>
-    <p>SQLTransaction</p>
-  </body>
-</html>
+//console.log("hi");
+
+
+
+
+
+
+</script>
+
+<form>
+<button id="testbtn" type="submit">Add</button>
+<br>
+<button id="getbtn" type="submit">Get</button>
+</form>
+
+
+
+
+
+
+
+
+</body><script type="text/javascript" src="db.js"> </script></html>
