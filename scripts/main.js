@@ -4,6 +4,8 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 // PhoneGap is ready
 function onDeviceReady() {
+
+    
 }
 
 var airlinesApp = function(){}
@@ -14,6 +16,7 @@ airlinesApp.prototype = function() {
     _ffNum = null, 
     _customerData = null,
     _login = false,
+
     
     run = function(){
         var that = this,
@@ -93,7 +96,9 @@ airlinesApp.prototype = function() {
     	$("#ad25").click(function(){ localStorage.cart = localStorage.cart+","+"p20"; });
     	$("#clearcart").click(function(){ localStorage.cart = ""; });
     	
-    	$.mobile.changePage("#allproducts", { transition: "flip" });
+    	//console.log(p[0][0]);
+    	
+    	$.mobile.changePage("#logon", { transition: "flip" });
     	console.log(localStorage.cart);
         
         if (!_login) {
@@ -103,7 +108,7 @@ airlinesApp.prototype = function() {
         	//$('#username2').text("Username here");
         	//$('#password2').text("Username here");
         	//$('#role2').text("Username here");
-	    	$.mobile.changePage("#allproducts", { transition: "flip" });
+	    	//$.mobile.changePage("#home", { transition: "flip" });
 	    	$('#loginbtn').submit(function () { alert("login clicked");
 	    		
 	    		$(this).hide();
