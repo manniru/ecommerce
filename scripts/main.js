@@ -9,12 +9,6 @@ function onDeviceReady() {
 var airlinesApp = function(){}
 
 airlinesApp.prototype = function() {
-	//console.log("hello");
-///////////////////////////////////////////////////////////
-	$("admloginbtn").click(function(){
-		 // alert("The paragraph was clicked.");
-		});
-///////////////////////////////////////////////////////////
     var _flightForCheckin = null,
     _flightForDetails=null,
     _ffNum = null, 
@@ -24,10 +18,10 @@ airlinesApp.prototype = function() {
     run = function(){
         var that = this,
         $seatPicker=$('#seatPicker');
-        $('#tripDetail').on('pagebeforeshow',$.proxy(_initTripDetail,that));
-        $('#boardingPass').on('pageshow',$.proxy(_initBoardingPass,that));
+        //$('#tripDetail').on('pagebeforeshow',$.proxy(_initTripDetail,that));
+       // $('#boardingPass').on('pageshow',$.proxy(_initBoardingPass,that));
         $('#home').on('pagebeforecreate',$.proxy(_initHome,that));
-        $('#checkIn').on('pageshow', $.proxy(_initCheckIn,that));
+       // $('#checkIn').on('pageshow', $.proxy(_initCheckIn,that));
         
         $('#myTripsListView').on('click', 'li', function () {
         	var item = $(this);
@@ -46,7 +40,7 @@ airlinesApp.prototype = function() {
         	_flightForCheckin.segments[_flightForCheckin.currentSegment].seat = seatMapDrawing.getselectedSeat();
         });
     },
-    
+    /**
     _initTripDetail = function(){
         var seg = _flightForDetails.segments[0];
 	    $('#tripDetail-title').text(seg.from + ' to ' + seg.to);
@@ -71,21 +65,24 @@ airlinesApp.prototype = function() {
 	    var flight = currentseg.flightNum + ':' + currentseg.from + ' to ' + currentseg.to;
 	    $('#boardingpass-flight').text(flight);
     },
-    
+    */
     _initHome = function(){
     	console.log($('#userName').val());
         if (!_login) {
+        	//TODO DEFUALT HOME PAGE
+        	$('#username1').text("Mannir");
+        	/////////////////////////////////////////
 	    	$.mobile.changePage("#logon", { transition: "flip" });
-	    	$('#login').submit(function () {
-               //console.log($('#userName').val());
+	    	$('#loginbtn').submit(function () { alert("login clicked");
+	    		
 	    		$(this).hide();
 	    		_login = true;
 	    		airData.logOn($('#userName').val(), $('#pwd').val(),_handleLogOn);
 	    		return false;
 	    	});
 	    }
-    },
-    
+    };
+    /**
     _initCheckIn = function(){
         var currentseg = _flightForCheckin.segments[_flightForCheckin.currentSegment],
 	    seat = currentseg.seat,
@@ -129,7 +126,7 @@ airlinesApp.prototype = function() {
 		$.mobile.changePage('#home', { transition: 'flip' });
 
 	};
-    
+   */ 
     return {
         run:run,
     };

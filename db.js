@@ -206,3 +206,5 @@ function get() { db.transaction(function (tx) { tx.executeSql("SELECT * FROM use
 });
 
 }); }
+
+function display() { console.log("hello"); }
