@@ -58,31 +58,16 @@
 	</head>
 	<body>
         
-        <!-- home page -->
-		<div id="home" data-role="page" data-mini="true">
-			<div data-role="header"  data-position="fixed"  data-tap-toggle="false">
-                <h1>eCommerce System</h1>
-			</div>
+<!-- home page -->
+<div id="home" data-role="page" data-mini="true">
+<div data-role="header"  data-position="fixed"  data-tap-toggle="false"><h1>eCommerce System</h1></div>
 			<div class="info-wrapper">
-				<div class="info-wrapper-left">
-					<img class="ice-logo"/>
-				</div>
+				<div class="info-wrapper-left"><img class="ice-logo"/></div>
                 
                 <div class="info-wrapper-right">
-					<div class="info">
-                        <div class="info-data" id="username2"></div><div class="info-label">Username2:</div>
-                        <div class="clear"></div>
-					</div>
-					<div class="info">
-                        <div class="info-data" id="miles"></div>
-						<div class="info-label" for="miles">Password:</div>
-                        <div class="clear"></div>
-					</div>
-					<div class="info">
-                        <div class="info-data" id="currentStatus">&nbsp;</div>
-						<div class="info-label" for="currentStatus">Role:</div>
-                        <div class="clear"></div>
-					</div>
+					<div class="info"><div class="info-data" id="username2"></div><div class="info-label">Username2:</div><div class="clear"></div></div>
+					<div class="info"><div class="info-data" id="password2"></div><div class="info-label">Password:</div><div class="clear"></div></div>
+					<div class="info"><div class="info-data" id="role2"></div><div class="info-label">Role:</div><div class="clear"></div></div>
 				</div>
                 <div class="clear"></div>
             </div>
@@ -93,7 +78,9 @@
 <ul data-role="listview" id="browsecat" data-inset="true" data-theme="d"><li><a href="#category" data-transition="slide">Browse by Category</a></li></ul>
 <ul data-role="listview" id="recordfind" data-inset="true" data-theme="d"><li><a href="#recordfind" data-transition="slide">Find Products</a></li></ul>                
 <ul data-role="listview" id="about" data-inset="true" data-theme="d"><li><a href="#about" data-transition="slide">About Screen</a></li></ul>                
-<ul data-role="listview" id="logout" data-inset="true" data-theme="d"><li><a href="#logout" data-transition="slide">Log out</a></li></ul>                               
+
+<a href="#logout" data-transition="slide"><input type="submit" id="logoutbtn" name="logoutbtn" value="Log out" /></a>
+                            
 </div>
 </div>
 
@@ -418,118 +405,152 @@ Developed By: NWAGBARA SAMUEL ONUABUCHI (U1158743)
 <div class="info-data" id="currentStatus">RM 3,400</div><div class="info-label" for="currentStatus">Price:</div><div class="clear"></div></div></div><div class="clear"></div></div> 
          
 </div>     
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
         
 
 <div id="allproducts" data-role="page" data-add-back-btn="true"><form>
 <div data-role="header" data-position="fixed"  data-tap-toggle="false">
 <h1>All Products</h1></div> 
-       
 
-<div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/m1.png" width="101" height="101" /></div><div class="info-wrapper-right"><div class="info">
-<div class="info-data" id="ffnum">Iphone S5</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div><div class="info">
-<div class="info-data" id="miles">Mobile</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div><div class="info">
-<div class="info-data" id="currentStatus">RM 2,800</div><div class="info-label" for="currentStatus">Price:</div>
-<div class="clear"></div></div></div><div class="clear"></div></div>       
+<input type="submit" id="clearcart" name="clearcart" value="Clear cart" />      
+
+<div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/m1.png" width="100" height="100" /></div><div class="info-wrapper-right">
+<div class="info"><div class="info-data" id="ffnum">I Phone 5</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div>
+<div class="info"><div class="info-data" id="miles">Mobile</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div>
+<div class="info"><div class="info-data" id="currentStatus">RM 1300</div><div class="info-label" for="currentStatus">Price:</div><div class="clear"></div></div>
+<div class="info"><div class="info-data" id="currentStatus"><input type="submit" id="ad6" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
+</div><div class="clear"></div></div>       
 
 <div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/m2.png" width="100" height="100" /></div><div class="info-wrapper-right">
 <div class="info"><div class="info-data" id="ffnum">Nokia Lumia 2</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="miles">Mobile</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="currentStatus">RM 1300</div><div class="info-label" for="currentStatus">Price:</div><div class="clear"></div></div>
-<div class="info"><div class="info-data" id="currentStatus"><input type="submit" id="add1" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
+<div class="info"><div class="info-data" id="currentStatus"><input type="submit" id="ad7" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
 </div><div class="clear"></div></div>   
 
 <div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/m3.png" width="100" height="100" /></div><div class="info-wrapper-right">
 <div class="info"><div class="info-data" id="ffnum">Samsung Note3</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="miles">Mobile</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="currentStatus">RM 3,100</div><div class="info-label" for="currentStatus">Price:</div><div class="clear"></div></div>
-<div class="info"><div class="info-data" id="currentStatus"><input type="submit" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
+<div class="info"><div class="info-data" id="currentStatus"><input type="submit" id="ad8" value="ad3" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
 </div><div class="clear"></div></div> 
 
 <div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/m4.png" width="100" height="100" /></div><div class="info-wrapper-right">
 <div class="info"><div class="info-data" id="ffnum">Samsung Note2</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="miles">Mobile</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="currentStatus">RM 1,800</div><div class="info-label" for="currentStatus">Price:</div><div class="clear"></div></div>
-<div class="info"><div class="info-data" id="currentStatus"><input type="submit" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
+<div class="info"><div class="info-data" id="currentStatus"><input type="submit" id="ad9" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
 </div><div class="clear"></div></div> 
 
 <div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/m5.png" width="100" height="100" /></div><div class="info-wrapper-right">
 <div class="info"><div class="info-data" id="ffnum">HTC Magic X3</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="miles">Mobile</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="currentStatus">RM 3,400</div><div class="info-label" for="currentStatus">Price:</div><div class="clear"></div></div>
-<div class="info"><div class="info-data" id="currentStatus"><input type="submit" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
+<div class="info"><div class="info-data" id="currentStatus"><input type="submit" id="ad10" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
 </div><div class="clear"></div></div> 
 
 <div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/t1.png" width="100" height="100" /></div><div class="info-wrapper-right">
 <div class="info"><div class="info-data" id="ffnum">Ipad 4</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="miles">Tablet</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="currentStatus">RM 4,500</div><div class="info-label" for="currentStatus">Price:</div><div class="clear"></div></div>
-<div class="info"><div class="info-data" id="currentStatus"><input type="submit" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
+<div class="info"><div class="info-data" id="currentStatus"><input type="submit" id="ad11" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
 </div><div class="clear"></div></div> 
 
 <div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/t2.png" width="100" height="100" /></div><div class="info-wrapper-right">
 <div class="info"><div class="info-data" id="ffnum">HTC Andorid 4.2</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="miles">Tablet</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="currentStatus">RM 2,150</div><div class="info-label" for="currentStatus">Price:</div><div class="clear"></div></div>
-<div class="info"><div class="info-data" id="currentStatus"><input type="submit" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
+<div class="info"><div class="info-data" id="currentStatus"><input type="submit" id="ad12" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
 </div><div class="clear"></div></div> 
 
 <div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/t3.png" width="100" height="100" /></div><div class="info-wrapper-right">
 <div class="info"><div class="info-data" id="ffnum">Asus Tab 4</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="miles">Tablet</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="currentStatus">RM 1,200</div><div class="info-label" for="currentStatus">Price:</div><div class="clear"></div></div>
-<div class="info"><div class="info-data" id="currentStatus"><input type="submit" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
+<div class="info"><div class="info-data" id="currentStatus"><input type="submit" id="ad13" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
 </div><div class="clear"></div></div> 
 
 <div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/t4.png" width="100" height="100" /></div><div class="info-wrapper-right">
 <div class="info"><div class="info-data" id="ffnum">Microsoft Surface 2</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="miles">Tablet</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="currentStatus">RM 5,100</div><div class="info-label" for="currentStatus">Price:</div><div class="clear"></div></div>
-<div class="info"><div class="info-data" id="currentStatus"><input type="submit" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
+<div class="info"><div class="info-data" id="currentStatus"><input type="submit" id="ad14" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
 </div><div class="clear"></div></div> 
 
 <div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/t5.png" width="100" height="100" /></div><div class="info-wrapper-right">
 <div class="info"><div class="info-data" id="ffnum">Microsoft Surface S5</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="miles">Tablet</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="currentStatus">RM 3,700</div><div class="info-label" for="currentStatus">Price:</div><div class="clear"></div></div>
-<div class="info"><div class="info-data" id="currentStatus"><input type="submit" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
+<div class="info"><div class="info-data" id="currentStatus"><input type="submit" id="ad15" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
 </div><div class="clear"></div></div> 
 
 <div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/l1.png" width="100" height="100" /></div><div class="info-wrapper-right">
 <div class="info"><div class="info-data" id="ffnum">Asus Notebook 5</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div>
 </div><div class="info"><div class="info-data" id="miles">Laptop</div><div class="info-label" for="miles">Color:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="currentStatus">RM 4,500</div><div class="info-label" for="currentStatus">Type:</div><div class="clear"></div></div>
-<div class="info"><div class="info-data" id="currentStatus"><input type="submit" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
+<div class="info"><div class="info-data" id="currentStatus"><input type="submit" id="ad16" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
 </div><div class="clear"></div></div> 
 
 <div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/l2.png" width="100" height="100" /></div><div class="info-wrapper-right">
 <div class="info"><div class="info-data" id="ffnum">Dell Laptop D4</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="miles">Latop</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="currentStatus">RM 5,310</div><div class="info-label" for="currentStatus">Price:</div><div class="clear"></div></div>
-<div class="info"><div class="info-data" id="currentStatus"><input type="submit" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
+<div class="info"><div class="info-data" id="currentStatus"><input type="submit" id="ad17" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
 </div><div class="clear"></div></div> 
 
 <div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/l4.png" width="150" height="150" /></div><div class="info-wrapper-right">
 <div class="info"><div class="info-data" id="ffnum">HP Laptop</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="miles">Laptop</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="currentStatus">RM 5,600</div><div class="info-label" for="currentStatus">Price:</div><div class="clear"></div></div>
-<div class="info"><div class="info-data" id="currentStatus"><input type="submit" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
+<div class="info"><div class="info-data" id="currentStatus"><input type="submit" id="ad18" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
 </div><div class="clear"></div></div> 
 
 <div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/l4.png" width="100" height="100" /></div><div class="info-wrapper-right">
 <div class="info"><div class="info-data" id="ffnum">HP Paviliion</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="miles">Laptop</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="currentStatus">RM 5,800</div><div class="info-label" for="currentStatus">Price:</div><div class="clear"></div></div>
-<div class="info"><div class="info-data" id="currentStatus"><input type="submit" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
+<div class="info"><div class="info-data" id="currentStatus"><input type="submit" id="ad19" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
 </div><div class="clear"></div></div> 
 
 <div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/l5.png" width="100" height="100" /></div><div class="info-wrapper-right">
 <div class="info"><div class="info-data" id="ffnum">DEL Laptop</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="miles">Laptop</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div>
 <div class="info"><div class="info-data" id="currentStatus">RM57,800</div><div class="info-label" for="currentStatus">Price:</div><div class="clear"></div></div>
-<div class="info"><div class="info-data" id="currentStatus"><input type="submit" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
+<div class="info"><div class="info-data" id="currentStatus"><input type="submit" id="ad20" value="Add" /></div><div class="info-label" for="currentStatus">Order Now</div><div class="clear"></div></div>
 </div><div class="clear"></div></div> 
 </form>        
 </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

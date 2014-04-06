@@ -22,7 +22,7 @@ airlinesApp.prototype = function() {
        // $('#boardingPass').on('pageshow',$.proxy(_initBoardingPass,that));
         $('#home').on('pagebeforecreate',$.proxy(_initHome,that));
        // $('#checkIn').on('pageshow', $.proxy(_initCheckIn,that));
-        
+        /**
         $('#myTripsListView').on('click', 'li', function () {
         	var item = $(this);
         	_flightForCheckin = item.data('flight');
@@ -39,6 +39,7 @@ airlinesApp.prototype = function() {
         $seatPicker.on('pagebeforehide', function (event) {
         	_flightForCheckin.segments[_flightForCheckin.currentSegment].seat = seatMapDrawing.getselectedSeat();
         });
+        */
     },
     /**
     _initTripDetail = function(){
@@ -67,17 +68,48 @@ airlinesApp.prototype = function() {
     },
     */
     _initHome = function(){
-    	console.log($('#userName').val());
+    	console.log("locastorage="+localStorage.username);
+    	///if(localStorage.username=='user1') { $.mobile.changePage("#allproducts", { transition: "flip" }); }
+        
+    	$("#ad6").click(function(){ localStorage.cart = localStorage.cart+","+"p1"; });
+    	$("#ad7").click(function(){ localStorage.cart = localStorage.cart+","+"p2"; });
+    	$("#ad8").click(function(){ localStorage.cart = localStorage.cart+","+"p3"; });
+    	$("#ad9").click(function(){ localStorage.cart = localStorage.cart+","+"p4"; });
+    	$("#ad10").click(function(){ localStorage.cart = localStorage.cart+","+"p5"; });
+    	$("#ad11").click(function(){ localStorage.cart = localStorage.cart+","+"p6"; });
+    	$("#ad12").click(function(){ localStorage.cart = localStorage.cart+","+"p7"; });
+    	$("#ad13").click(function(){ localStorage.cart = localStorage.cart+","+"p8"; });
+    	$("#ad14").click(function(){ localStorage.cart = localStorage.cart+","+"p9"; });
+    	$("#ad15").click(function(){ localStorage.cart = localStorage.cart+","+"p10"; });
+    	$("#ad16").click(function(){ localStorage.cart = localStorage.cart+","+"p11"; });
+    	$("#ad17").click(function(){ localStorage.cart = localStorage.cart+","+"p12"; });
+    	$("#ad18").click(function(){ localStorage.cart = localStorage.cart+","+"p13"; });
+    	$("#ad19").click(function(){ localStorage.cart = localStorage.cart+","+"p14"; });
+    	$("#ad20").click(function(){ localStorage.cart = localStorage.cart+","+"p15"; });
+    	$("#ad21").click(function(){ localStorage.cart = localStorage.cart+","+"p16"; });
+    	$("#ad22").click(function(){ localStorage.cart = localStorage.cart+","+"p17"; });
+    	$("#ad23").click(function(){ localStorage.cart = localStorage.cart+","+"p18"; });
+    	$("#ad24").click(function(){ localStorage.cart = localStorage.cart+","+"p19"; });
+    	$("#ad25").click(function(){ localStorage.cart = localStorage.cart+","+"p20"; });
+    	$("#clearcart").click(function(){ localStorage.cart = ""; });
+    	
+    	$.mobile.changePage("#allproducts", { transition: "flip" });
+    	console.log(localStorage.cart);
+        
         if (!_login) {
         	//TODO DEFUALT HOME PAGE
-        	$('#username1').text("Mannir");
+        	//$('#username2').text("Mannir");
         	/////////////////////////////////////////
-	    	$.mobile.changePage("#logon", { transition: "flip" });
+        	//$('#username2').text("Username here");
+        	//$('#password2').text("Username here");
+        	//$('#role2').text("Username here");
+	    	$.mobile.changePage("#allproducts", { transition: "flip" });
 	    	$('#loginbtn').submit(function () { alert("login clicked");
 	    		
 	    		$(this).hide();
 	    		_login = true;
-	    		airData.logOn($('#userName').val(), $('#pwd').val(),_handleLogOn);
+	    		///airData.logOn($('#userName').val(), $('#pwd').val(),_handleLogOn);
+	    		console.log("set value here");
 	    		return false;
 	    	});
 	    }

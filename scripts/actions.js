@@ -1,6 +1,7 @@
 
 $(document).ready(function() {
-	$('#username1').text(localStorage["username"]);
+	document.getElementById("username2").innerHTML=localStorage.username;
+	//$('#username1').text(localStorage["username"]);
 	var db = openDatabase('db', '1.0', 'eCommerce DB', 2 * 1024 * 1024);
 	
     $("#registerbtn").click(function(){
@@ -26,13 +27,26 @@ $(document).ready(function() {
     $("#loginbtn").click(function(){
     	var user1 = $('#username1').val();
 		var pass1 = $('#password1').val();
-		localStorage.setItem("username", user1);
-		localStorage.setItem("password", pass1);
+		console.log(user1+"="+pass1);
+		localStorage.username = user1;
+		
+		
 		//localStorage.setItem("username", user1);
-		console.log(localStorage["username"]);
+		//localStorage.setItem("password", pass1);
+		//localStorage.setItem("username", user1);
+		//console.log(localStorage["username"]);
 
         
     });
+    
+    $("#logoutbtn").click(function(){
+    	console.log("logout clicked")
+		localStorage.username = "";
+
+        
+    });
+    
+
     
 
 });
